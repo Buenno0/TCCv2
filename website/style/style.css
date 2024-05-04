@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Login and Create Account */
+.body-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ddcece; /* Alterado para um tom mais suave */
+}
+
+.card-login {
+    background-color: #f8f8f8; /* Tom parecido com branco */
+    border-radius: 12px; /* Borda mais arredondada */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); /* Sombra mais pronunciada */
+    padding: 32px;
+    max-width: 470px;
+    width: 100%;
+    
+}
+
+
+.card-login h3 {
+    margin-bottom: 24px;
+    color: #3d84b3;
+}
+
+.p-no-account {
+    margin-top: 16px;
+    margin-bottom: 8px;
+    color: #666;
+}
+
+.form-group {
+    margin-bottom: 24px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #666;
+    font-weight: 500;
+    
+    font-size: 15px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #3d84b3;
+    outline: none;
+}
+
+.btn-login {
+    background-color: #3d84b3;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+.btn-login:hover {
+    background-color: #0056b3;
+}
+
+.no-account {
+    font-size: 14px;
+    color: #3d84b3;
+    text-decoration: none;
+    margin-top: 8px;
+    display: inline-block;
+}
+
+/* Adicionado um efeito de gradiente para um visual mais interessante */
+.card-login::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(61, 132, 179, 0.1), rgba(255, 255, 255, 0));
+    z-index: -1;
+    border-radius: 12px;
+}
